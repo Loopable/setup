@@ -28,9 +28,9 @@ The people who run setup are instance operators. Many of them host instances for
 
 Start with the relevant existing routes, components, and configuration before making changes.
 
-* `src/routes/` contains the SvelteKit pages that guide the operator through setup.
+* `src/app/` contains the Next.js pages that guide the operator through setup.
 * `src/lib/` contains the reusable code behind setup, including installation and configuration logic.
-* `package.json`, `tsconfig.json`, `vite.config.ts`, `eslint.config.js`, and `prettier.config.js` contain the tooling configuration.
+* `package.json`, `tsconfig.json`, `next.config.ts`, `eslint.config.js`, and `prettier.config.js` contain the tooling configuration.
 * `SECURITY.md` contains security guidance.
 * `LICENSE` contains licensing terms.
 
@@ -42,7 +42,7 @@ Read before changing.
 
 Search for existing routes, components, logic, tests, and documentation before creating new ones.
 
-Follow existing patterns unless the task requires changing them. This includes patterns in Svelte, SvelteKit, and TypeScript usage.
+Follow existing patterns unless the task requires changing them. This includes patterns in React, Next.js, and TypeScript usage.
 
 Do not invent a new mechanism when the repository already has one.
 
@@ -98,7 +98,7 @@ Keep existing useful wording where possible. Do not rewrite large amounts of Mar
 
 Do not manually edit generated files when the repository provides a generator or documented way to update them.
 
-`.svelte-kit/`, `node_modules/`, and `dist/` are generated or transient. Find the source and generation process first.
+`.next/`, `node_modules/`, and `dist/` are generated or transient. Find the source and generation process first.
 
 If the task requires generated output to change, use the repository's existing generation process.
 
@@ -106,7 +106,7 @@ If the task requires generated output to change, use the repository's existing g
 
 Use the repository's existing validation and test commands.
 
-Run the smallest relevant checks for the change rather than running everything by default. Relevant checks may include `npm run check`, `npm run lint`, `npm run build`, and component or end-to-end tests where they exist.
+Run the smallest relevant checks for the change rather than running everything by default. Relevant checks may include `bun run lint`, `bun run build`, and component or end-to-end tests where they exist.
 
 For a bug fix, add or update a test when the repository has an appropriate test for the affected behavior.
 

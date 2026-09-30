@@ -1,12 +1,12 @@
 # CONTRIBUTING.md
 
-This repository contains the Loopable Instance Setup. It is a SvelteKit application that guides an operator from a blank machine or environment to a running Loopable instance: creating and configuring the server files, credentials, keys, and services an instance needs.
+This repository contains the Loopable Instance Setup. It is a Next.js application that guides an operator from a blank machine or environment to a running Loopable instance: creating and configuring the server files, credentials, keys, and services an instance needs.
 
 ## Before changing code
 
 Read the relevant existing code and documentation first. Follow the repository's existing patterns. Do not add a second mechanism when one already exists.
 
-Use the repository's existing tooling: the scripts in `package.json`, the ESLint and Prettier configuration, and the Svelte and TypeScript conventions already in use.
+Use the repository's existing tooling: the scripts in `package.json`, the ESLint and Prettier configuration, and the React and TypeScript conventions already in use.
 
 ## Compliance with Loopable
 
