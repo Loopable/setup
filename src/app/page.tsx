@@ -55,7 +55,7 @@ export default function Home() {
             </p>
           </div>
 
-          <Button autoFocus size="lg" className="w-full rounded-full">
+          <Button size="lg" className="w-full rounded-full">
             Let&apos;s go
           </Button>
 
